@@ -45,11 +45,13 @@ img{
   padding-left: auto;
 }
 .head{
+  border: 1px solid #e7e9fc;
   display: flex;
 }
 .nav{
   display: flex;
-  margin-right: 332px;  
+  align-items: center; 
+  margin-right: 332px; 
 }
 .web-link {
   color: var(--iris);
@@ -108,9 +110,11 @@ img{
 .address-link-list{
   display: flex;
   gap: 40px;
+  padding: 24px 0 ;
 }
 .business {
   background: var(--navyblue);
+  padding: 188px 316px;
 }
 .business-title {
   color: var(--white);
@@ -119,13 +123,7 @@ img{
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px;
-}
-.business-conteiner{
-  padding-top: 188px;
-  padding-right: 472px;
-  padding-bottom: 188px;
-  padding-left: 472px;
+  max-width: 496px;
 }
 .business-but {
   font-family: "Roboto", sans-serif;
@@ -136,11 +134,12 @@ img{
   background: var(--iris);
   color: var(--white);
   cursor: pointer;
-  display: inline-flex;
-  padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;;
   margin-top: 48px;
+  border-radius: 4px;
 }
 .business-but:hover {
   background-color: var(--ocean);
