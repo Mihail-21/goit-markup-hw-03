@@ -44,14 +44,17 @@ img{
   padding-right: auto;
   padding-left: auto;
 }
+.header{
+  border-bottom: 1px solid #e7e9fc;
+}
 .head{
-  border: 1px solid #e7e9fc;
   display: flex;
+  align-items: center;
 }
 .nav{
   display: flex;
   align-items: center; 
-  margin-right: 332px; 
+  margin-right: auto; 
 }
 .web-link {
   color: var(--iris);
@@ -64,6 +67,8 @@ img{
   letter-spacing: 0.03em;
   display: flex;
   margin-right: 76px;
+  padding: 24px 0px;
+  display: block;
 }
 .link {
   text-decoration: none;
@@ -79,6 +84,8 @@ img{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0px;
+  display: block;
 }
 .logo-link:hover {
   color: var(--ocean);
@@ -100,6 +107,8 @@ img{
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0px;
+  display: block;
 }
 .address-link:hover {
   color: var(--ocean);
@@ -110,21 +119,20 @@ img{
 .address-link-list{
   display: flex;
   gap: 40px;
-  padding: 24px 0 ;
-  margin: auto;
 }
 .business {
   background: var(--navyblue);
-  padding: 188px 316px;
+  padding: 188px 0;
 }
 .business-title {
   color: var(--white);
   text-align: center;
-  font-family: "Roboto" o;
+  font-family: "Roboto";
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   max-width: 496px;
+  margin: 0 auto;
 }
 .business-but {
   font-family: "Roboto", sans-serif;
@@ -139,6 +147,7 @@ img{
   min-width: 169px;
   height: 56px;
   border: none;;
+  margin: 0 auto;
   margin-top: 48px;
   border-radius: 4px;
 }
@@ -166,7 +175,7 @@ img{
   padding-right: auto;
   padding-left: auto;
 }
-.benefits{
+  .benefits{
   display: flex;
   gap: 24px;
 }
@@ -184,7 +193,7 @@ img{
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 120px;
+  margin-top: 8px;
 }
 .benefits-item{
   flex-basis:calc((100% - 24px * 3) / 4) ;
@@ -198,10 +207,10 @@ img{
 .doing-list{
   display: flex;
   gap: 24px;
-  margin-bottom: 120px;
 }
 .team-section {
   background-color: var(--cloud);
+  padding: 120px 0;
 }
 .title {
   color: var(--navyblue);
@@ -213,19 +222,20 @@ img{
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
-.team-container{
-  padding-bottom: 120px;
-}
+
 .team-img {
   background-color: var(--white);
 }
 .team-title-list{
-  margin-top: 120px;
   margin-bottom: 72px;
 }
 .team-list{
   display: flex;
   gap: 24px;
+}
+.content{
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .team-title {
   color: var(--navyblue);
@@ -236,9 +246,6 @@ img{
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-
-  margin-top: 32px;
-  margin-bottom: 8px;
 }
 .team-text {
   color: var(--slate, #434455);
@@ -248,18 +255,11 @@ img{
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-
-  margin-bottom: 32px;
 }
 /*footer*/
 .footer {
   background: var(--navyblue);
-}
-.footer-conteiner{
-  padding-top: 101.5px;
-  padding-bottom: 100px;
-  padding-left: auto;
-  padding-right: auto;
+  padding: 100px 0;
 }
 .web-link-footer {
   color: var(--iris);
@@ -269,6 +269,8 @@ img{
   text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  display: inline-block;
+  margin-bottom: 17.5px;
 }
 .web-studio {
   color: var(--cloud);
@@ -279,6 +281,7 @@ img{
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 /*Technologies*/
 .header{
@@ -295,6 +298,7 @@ img{
   display: flex;
   gap: 24px;
   margin-bottom: 84px;
+  justify-content: center;
 }
 .tech-but {
   font-family: "Roboto", sans-serif;
@@ -305,6 +309,9 @@ img{
   color: var(--iris);
   background-color: var(--cloud);
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--CORNFLOWER, #E7E9FC);
+  border-radius: 4px;
 }
 .tech-but:hover {
   color: var(--white);
@@ -317,11 +324,17 @@ img{
 .tech-list{
   display: flex;
   flex-wrap: wrap;
-  row-gap: 24px;
-  column-gap: 48px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .tech-list-title{
-  flex-basis: calc((100% - 32px * 2) / 3);
+  flex-basis: calc((100% - 24px * 2) / 3);
+  border: 1px solid var(--CORNFLOWER, #E7E9FC);
+  background: var(--WHITE, #FFF);
+}
+.content-box{
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .tech-title {
   color: var(--navyblue);
@@ -330,6 +343,7 @@ img{
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
 }
 .tech-text {
   color: var(--slate);
