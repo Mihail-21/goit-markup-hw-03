@@ -342,6 +342,7 @@ img{
 }
 .content-box{
   padding: 32px 16px;
+  border: 1px solid #e7e9fc; 
 }
 .tech-title {
   color: var(--navyblue);
@@ -350,7 +351,8 @@ img{
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  border: 1px solid #e7e9fc;
+  margin-bottom: 8px; 
 }
 .tech-text {
   color: var(--slate);
